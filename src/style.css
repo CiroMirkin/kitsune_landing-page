@@ -1,0 +1,146 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+html {
+  background-color: #151515;
+}
+
+.section-bg-color {
+  background-color: #111111;
+}
+
+.subtitulo {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #bdb1a9;
+}
+
+header {
+  width: 100%;
+  height: 3rem;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 3rem);
+  background-image: url("/hero.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.destacados {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.destacados_lista {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.destacados_item {
+  width: 16rem;
+  height: auto;
+  padding: 0.5rem;
+  border: #bdb1a9 solid 1px;
+  border-radius: 0;
+}
+.destacados_item img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.destacado_titulo {
+  margin: 0 0 5px;
+  font-size: 1.5rem;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+.tags_tag {
+  font-size: 12px;
+  padding: 2px 18px;
+  color: #bdb1a9;
+  border: #bdb1a9 1px solid;
+  background: transparent;
+  border-radius: 10px;
+}
+
+.comprar {
+  width: 100%;
+  margin: 0.5rem 0 0;
+  padding: 0.5rem 1rem;
+  
+  text-align: center;
+  font-size: 1rem;
+
+  border-radius: 5px;
+  border: none;
+  background-color: #111;
+  color: #bdb1a9;
+}
+
+/* Contenido */
+
+.contenido {
+  width: 100%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contenido_nav {
+  display: grid;
+  place-items: center;
+  width: 100%;
+
+  background-color: #111;
+}
+
+.contenido_nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+
+.contenido_nav a {
+  font-size: 1.2rem;
+  color: #bdb1a9;
+}
+
+.picure50 {
+  width: 50vw;
+  height: 100%;
+  background-image: url("/mano.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
