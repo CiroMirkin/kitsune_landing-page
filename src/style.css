@@ -55,10 +55,10 @@ a:hover {
   color: #bdb1a9;
 }
 
-header {
+.hero__header {
   width: 100%;
   height: 3rem;
-  padding: 5px 0;
+  padding: 0 0 5px;
   display: flex;
   justify-content: center;
 }
@@ -66,7 +66,7 @@ header {
   display: block;
   width: 10rem;
   height: 10rem;
-  background-image: url("/kitsune.jpg");
+  background-image: url("/kitsune.png");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -155,20 +155,24 @@ header {
 }
 
 .anillo:hover {
-  box-shadow: var(--10-border) 0px 50px 100px -20px, var(--10) 0px 30px 60px -30px;
-/*
-  box-shadow: var(--10-border) 0px 30px 60px -12px, var(--10) 0px 18px 36px -18px;
-  */
+  box-shadow: rgba(255, 0, 183, 0.048) 0px 50px 100px -20px, rgba(255, 0, 183, 0.11) 0px 30px 60px -30px;
 }
 
 .anillo img {
-  border-radius: 5px;
-  max-width: 100%;
+  width: 100%;
+  min-height: 15rem;
   object-fit: contain;
+  transition: filter 0.5s ease-out;
+  background: transparent;
+  border-radius: 5px;
+}
+
+.anillo:hover img {
+  filter: saturate(1.4);
 }
 
 .anillo_text {
-  margin: .8rem 0 0;
+  margin: .4rem 0 0;
 }
 
 .destacado_titulo {
@@ -229,10 +233,7 @@ header {
 .picure50 {
   width: 50vw;
   height: 100%;
-  background-image: url("/mano.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  object-fit: cover;
 }
 
 
@@ -253,19 +254,9 @@ main {
   align-items: center;
 }
 
-.section-anillos {
-  max-width: 70rem;
-}
-
-.anillos {
-  width: 100%;
-  padding: 2rem 4rem;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 2rem;
-
-  list-style: none;
+.page__subtitulo {
+  width: auto;
+  font-family: 'font';
 }
 
 /* Footer */
@@ -278,6 +269,9 @@ main {
   align-items: center;
 
   font-family: "font";
+}
+.footer-page-bg {
+  background-color: #111;
 }
 
 .footer_title {

@@ -5,14 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anillos - Kitsune</title>
     <link rel="stylesheet" href="./src/style.css">
+    <style>
+        .section-anillos {
+  max-width: 70rem;
+}
+
+.anillos {
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  list-style: none;
+}
+    </style>
 </head>
 <body>
     <header class="header-page">
-        <span class="logo"></span>
         <a href="/index.html">Inicio</a>
+        <span class="logo"></span>
+        <span></span>
     </header>
     <main>
-        <h1 class="subtitulo">Anillos</h1>
+        <h2 class="page__subtitulo">Anillos</h2>
         <section class="section-anillos">
             <ul class="anillos">
                 <li class="anillo">
@@ -101,6 +118,29 @@
                 </li>
             </ul>
         </section>
+        <h2 class="page__subtitulo">Dijes</h2>
+        <section class="section-anillos">
+            <ul class="anillos">
+                <li class="anillo">
+                    <img src="./dije (1).jpg" alt="Anillo">
+                    <div class="anillo_text">
+                        <p class="destacado_titulo">Anillo tanto</p>
+			            <p class="precio">$180.000</p>
+                    </div>
+                </li>
+                <li class="anillo">
+                    <img src="./dije (2).jpg" alt="Anillo">
+                    <div class="anillo_text">
+                        <p class="destacado_titulo">Anillo tanto</p>
+			            <p class="precio">$180.000</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </main>
+    <footer class="footer footer-page-bg">
+        <h2>Kitsune</h2>
+        <a class="ig" href="https://www.instagram.com/kitsune.joyeria/" target="_blank">@kitsune.joyeria</a>
+    </footer>
 </body>
 </html>
